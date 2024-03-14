@@ -52,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'todo_list.urls'
@@ -91,6 +93,7 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(default='postgres://todo_app_gwg3_user:1VNIpruE7D4MHtBDaXTzk9HZZSrRBXtv@dpg-cnpbih6d3nmc73e3jq4g-a.oregon-postgres.render.com/todo_app_gwg3')
 }
+
 
 WSGI_APPLICATION = 'todo_list.wsgi.application'
 
